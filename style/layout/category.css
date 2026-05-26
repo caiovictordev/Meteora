@@ -1,0 +1,49 @@
+
+.category{
+    width: 100%;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 0 auto;
+    place-items: center;
+    gap: 15px;
+}
+.card{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.category h1{
+    grid-column: span 6;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.card-body{
+    background-color: #000;
+}
+.card-text{
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 10rem;
+    }
+    
+    .category h1{
+        grid-column: span 3;
+        font-size: 2rem;
+    }
+    .category{
+        grid-template-columns: repeat(3,1fr) ;
+    }
+}
+@media (max-width: 450px){
+    .category h1{
+        grid-column: span 2;
+        font-size: 1.5rem;
+    }
+    .category{
+        grid-template-columns: repeat(2,1fr) ;
+    }
+}
