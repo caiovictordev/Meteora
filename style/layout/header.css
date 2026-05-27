@@ -1,6 +1,5 @@
 header{
     width: 100%;
-    border: solid 2px;
     background-color:var(--cor1, #000);
     padding: 20px;
     display: flex;
@@ -10,23 +9,23 @@ header{
 
 nav{
     display: flex;
-    border: solid 2px;
+    align-items: center;
+    gap: 40px;
 }
 
 nav img{
-    border: solid 2px;
     width: 10vw;    
 }
 
 header nav ul{
     display: flex;
     align-items: center;
-    border: solid 2px;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
     font-size: 1.5rem;
-    border: solid 2px;
 }
 
 .headerBusca{
@@ -34,12 +33,46 @@ header nav ul li {
     gap: 10px;
 }
 .headerBusca input{
-    padding: 7px;
+    padding: 0.5rem;
 }
 .headerBusca button{
-    padding: 7px;
+    padding: 0.5rem;
     width: 100px;
     background-color: var(--cor1);
     color: var(--cor2);
     border: var(--cor2) 1px solid;
+}
+
+/* Animação */
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover{
+    font-weight: 700;
+    transform: scale(1.05);
+}
+
+/* Rensposividade  tablet */
+@media(max-width: 890px){
+    header nav ul li {
+        font-size: 0.7rem;
+    }
+
+    .headerBusca input{
+        padding: 0.2rem;
+    }
+
+    .headerBusca button{
+        padding: 0.2rem;
+        width: 100px;
+    }
+}
+/* Rensposividade  Celular */
+@media(max-width: 375px){
+    
 }
