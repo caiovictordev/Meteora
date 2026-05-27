@@ -16,19 +16,21 @@ img{
 
 ul{
     display: flex;
+    gap: 20px
 }
 
 li{
     list-style: none;
 }
-a{
-    text-decoration: none;
+
+a {
+    text-decoration: none !important;
 }
 
 :root{
     /* Color Primary */
-    --cor1: #0000;
-    --cor2: #cccc;
+    --cor1: #000;
+    --cor2: #ccc;
     --cor3: #daff01;
     --cor4: #9353ff;
 

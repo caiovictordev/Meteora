@@ -1,0 +1,10 @@
+/* Animation */
+nav a{
+    color: white;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+nav a:hover{
+    font-weight: 700;
+    transform: scale(1.05);
+}
