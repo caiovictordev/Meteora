@@ -1,0 +1,35 @@
+.products{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-body span, .card-body h5{
+    font-weight: bold;
+}
+.cards h1{
+    grid-column: span 3;
+    text-align: center;
+}
+.btn-primary{
+    background-color: var(--cor4) !important;
+    border-color: var(--cor4) !important;
+    color: #fff6e5 !important;
+}
+
+.btn-primary:hover{
+    background-color: var(--cor5) !important;
+    border-color: var(--cor5) !important;
+}
