@@ -2,22 +2,29 @@
     display: flex;
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 50px auto;
     align-items: center;
     justify-content: center;
+}
+.boxProducts{
+    transition: all 0.5s ease;
+}
+.boxProducts:hover{
+    transform:scale(1.05);
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    gap: 15px;
 }
-.card-body{
+.viewProduct{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.card-body span, .card-body h5{
-    font-weight: bold;
+.viewProduct span, .viewProduct h5{
+    font-weight: bold;  
+    color: var(--cor1), #000 !important;
 }
 .cards h1{
     grid-column: span 3;
