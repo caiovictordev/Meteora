@@ -25,4 +25,5 @@ const validareEmail = (email) => {
     // Padrão: TEXTO@TEXTO.TEXTO
     const regex = /^[^\s]+@[^\s]+\.[^\s]+$/
     return regex.test(email)
+    
 } 
