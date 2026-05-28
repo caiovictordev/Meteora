@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +15,148 @@
 
     <title>Meteora</title>
 </head>
-
-<body>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="src/images/Desktop/Logo desktop.png" alt="Logo"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar-dark"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Lojas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Novidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Promoções</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Digite o produto"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img 
+            src="src/images/Desktop/Banner1.png"
+            class="img-fluid" 
+            alt="Banner1">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img 
+            src="src/images/Desktop/Banner2.png"
+            class="img-fluid" 
+            alt="Banner1">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img 
+            src="src/images/Desktop/Banner3.png"
+            class="img-fluid" 
+            alt="Banner1">
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  <section class="category">
+      <h1>Busque por categoria:</h1>
+      <div class="card" style="width: 12rem">
+        <img src="src/images/Desktop/Categorias/Categoria camiseta.png" class="card-img-top" alt="Camiseta" />
+        <div class="card-body">
+          <p class="card-text">
+            Camisetas
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem">
+        <img src="src/images/Desktop/Categorias/Categoria Bolsa.png" class="card-img-top" alt="Bolsa" />
+        <div class="card-body">
+          <p class="card-text">
+            Bolsas
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem">
+        <img src="src/images/Desktop/Categorias/Categoria Calçados.png" class="card-img-top" alt="Calçados" />
+        <div class="card-body">
+          <p class="card-text">
+            Calçados
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem">
+        <img src="src/images/Desktop/Categorias/Categoria calça.png" class="card-img-top" alt="Calça" />
+        <div class="card-body">
+          <p class="card-text">
+            Calça
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem">
+        <img src="src/images/Desktop/Categorias/Categoria casacos.png" class="card-img-top" alt="Casacos" />
+        <div class="card-body">
+          <p class="card-text">
+            Casacos
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem">
+        <img src="src/images/Desktop/Categorias/Categoria óculos.png" class="card-img-top" alt="Oculos" />
+        <div class="card-body">
+          <p class="card-text">
+            Óculos
+          </p>
+        </div>
+      </div>
+    </section>
     <section class="products">
         <div class="cards">
             <h1>Produtos que estão bombando</h1>
@@ -151,6 +290,5 @@
             <button type="button" class="btn btn-secondary">Adicionar à sacola</button>
         </div>
      </div>
-</body>
-
+  </body>
 </html>
