@@ -1,26 +1,22 @@
+import toast from "./toast.js"
 export default function verifMail(){  
-      const emailInput = document.querySelector("emailInput")
-      const resultMessage = document.querySelector("resultMessage")
-      const emailForm = document.querySelector("emailForm") 
+      const emailInput = document.querySelector("#emailInput")
+      const resultMessage = document.querySelector("#resultMessage")
+      const emailForm = document.querySelector("#emailForm") 
       const toastTrigger = document.getElementById('liveToastBtn')
       const toastLiveExample = document.getElementById('liveToast')
       
       // Um evento que controla/ativa após a submissão do form
       emailForm.addEventListener("submit", function (event){
-        event.preventDefault()
-      
+      event.preventDefault()
         const email = emailInput.value
       
         // Validar email
-        const isValid = validateEmail(email)
-      
+        const isValid = validareEmail(email)
+        console.log(isValid)
+        
         if(isValid){
-              resultMessage.textContent = "E-mail válido!"
-              resultMessage.style.color = "green"
-              const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-            toastTrigger.addEventListener('click', () => {
-            toastBootstrap.show()
-      })
+              toast()
         }else{
               resultMessage.textContent = "E-mail inválido!"
               resultMessage.style.color = "red"

@@ -9,6 +9,7 @@ export default function modal (){
 
     botoes.forEach(item=> {
         item.addEventListener('click',()=>{
+            event.preventDefault()
             let contexto = item.dataset.contexto
             console.log(contexto)
             switch(contexto){
