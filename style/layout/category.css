@@ -11,7 +11,7 @@
 .card{
     margin: 0 !important;
     padding: 0 !important;
-    transition: all 0.3s ease;
+    transition:  0.3s ease;
 }
 
 .card:hover {
@@ -23,32 +23,36 @@
     font-size: 2.5rem;
 }
 .card-body{
-    background-color: #000;
+    background-color: var(--cor1) !important;
 }
-.card-text{
-    color: #fff;
+.category .card-body .card-text{
     text-align: center;
+    color: var(--cor6);
 }
 
-@media (max-width: 768px){
-    .card{
-        width: 10rem;
+@media (max-width:1250px) {
+    .category{
+        grid-template-columns: repeat(3,1fr) !important;
     }
-    
+    .card{
+        width: 90% !important;
+    }
     .category h1{
         grid-column: span 3;
-        font-size: 2rem;
-    }
-    .category{
-        grid-template-columns: repeat(3,1fr) ;
     }
 }
-@media (max-width: 450px){
+
+@media (max-width:600px) {
     .category h1{
         grid-column: span 2;
         font-size: 1.5rem;
     }
     .category{
-        grid-template-columns: repeat(2,1fr) ;
+        grid-template-columns: repeat(2,1fr) !important;
     }
+}
+
+
+@media (max-width: 450px){
+    
 }

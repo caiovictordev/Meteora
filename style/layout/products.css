@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 50px auto;
     align-items: center;
     justify-content: center;
 }
@@ -11,13 +11,25 @@
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
-.card-body{
+.animProducts{
+    transition: all 0.5s ease;
+}
+.animProducts:hover{
+    transform: scale(1.03) !important;
+}
+
+.cards .card-body .card-text{
+    color: var(--cor1);
+}
+ .cards .card-body{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background: var(--cor6) !important;
 }
-.card-body span, .card-body h5{
+.cards .card-body span, .cards .card-body h5{
     font-weight: bold;
+    color: var(--cor1);
 }
 .cards h1{
     grid-column: span 3;
@@ -42,7 +54,7 @@
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 9999 ;
 }
 .modalConteudo{
     background-color: #fff;
