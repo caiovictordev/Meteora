@@ -1,0 +1,210 @@
+.products{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-body span, .card-body h5{
+    font-weight: bold;
+}
+.cards h1{
+    grid-column: span 3;
+    text-align: center;
+}
+.btn-primary{
+    background-color: var(--cor4) !important;
+    border-color: var(--cor4) !important;
+    color: #fff6e5 !important;
+}
+
+.btn-primary:hover{
+    background-color: var(--cor5) !important;
+    border-color: var(--cor5) !important;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.modalConteudo{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 45px 1fr;
+}
+.headerModal{
+    width: 100%;
+    background-color: var(--cor1);
+    grid-column: span 2;
+    color: var(--cor2);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.bi-check-circle{
+    font-size: 1.5rem;
+    color: var(--cor3);
+}
+.headerModal > div {
+    display: flex;
+    gap: 20px; 
+}
+
+.headerModal > div > h1 {
+    margin-top: 6px;
+}
+.headerModal h1{
+    font-size: 1.2rem;
+}
+.headerModal button{
+    width: 2vw;
+    height: 3vh;
+    background: transparent;
+    color: var(--cor2);
+    cursor: pointer;
+    border: none;
+}
+.imgModal{
+    padding: 10px;
+}
+.imgModal img{
+    border-radius: 15px;
+}
+.infoTxt{
+    border-bottom: 1px solid;
+}
+.infoTxt h1{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.infoProdutcs{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.infoPrice{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--cor2);
+}
+.infoPrice span{
+    padding: 15px 0;
+}
+.infoPrice > span:not(.infoPrice span ~ span){
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.infoPrice span ~ span{
+    color: var(--cor2);
+    font-size: 0.8rem;
+}
+.inputCor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid var(--cor2);
+}
+.inputs{
+    display: flex;
+    gap: 10px;
+}
+.labelCor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.labelCor label:not(input[type="radio"]){
+    font-size: 0.8rem;
+}
+.inputTam{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tamanhos{
+    display: flex;
+    gap: 20px;
+}
+.radioTam:checked{
+    accent-color: var(--cor5)
+}
+
+.tam{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn-secondary{
+    background: var(--cor4);
+    grid-column: 2;
+    width: 15vw;
+    margin-bottom: 15px;
+}
+@media (max-width: 900px) {
+    .cards h1{
+        grid-column: span 2;
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 768px) {
+    .imgModal{
+        width: 30vh;
+        margin: 0 auto;
+    }
+    .headerModal{
+        padding: 15px;
+    }
+    .bi-check-circle{
+        font-size: 1rem;
+    }
+    .headerModal h1{
+        font-size: 0.6rem;
+    }
+    
+    .modalConteudo{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-secondary{
+        margin-left: 7px;
+        width: 25vw;
+    }
+}
+@media (max-width: 600px) {
+    .cards h1{
+        grid-column: span 1;
+        font-size: 1.5rem;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+@media (max-width: 450px) {
+    .btn-secondary{
+        width: 40vw;
+    }
+}
