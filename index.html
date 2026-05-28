@@ -28,7 +28,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s content.</p>
                         <span>R$70,00</span>
-                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                    <a href="#" data-contexto="camiseta" class="btn btn-primary viewMore">Ver Mais</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -38,7 +38,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s content.</p>
                         <span>R$180,00</span>
-                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                    <a href="#" data-contexto="calca" class="btn btn-primary viewMore">Ver Mais</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -48,7 +48,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s content.</p>
                         <span>R$250,00</span>
-                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                    <a href="#" data-contexto="tenis" class="btn btn-primary viewMore">Ver Mais</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -58,7 +58,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s content.</p>
                         <span>R$150,00</span>
-                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                    <a href="#" data-contexto="jaqueta" class="btn btn-primary viewMore">Ver Mais</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -66,9 +66,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Óculos Redondo</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
+                        card´s content.</p>
                         <span>R$120,00</span>
-                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                    <a href="#" data-contexto="oculos" class="btn btn-primary viewMore">Ver Mais</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -78,7 +78,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s content.</p>
                         <span>R$120,00</span>
-                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                    <a href="#" data-contexto="bolsa" class="btn btn-primary viewMore">Ver Mais</a>
                 </div>
             </div>
         </div>
@@ -93,15 +93,15 @@
                 </div>
                 <button class="closeModal">X</button>
             </div>
-            <div class="imgModal"><img src="src/images/Desktop/Imagens Cards/Jaqueta.png" alt=""></div>
+            <div class="imgModal"><img class="image" src="src/images/Desktop/Imagens Cards/Jaqueta.png" alt=""></div>
             <div class="infoProdutcs">
                 <div class="infoTxt">
-                    <h1 data-contexto="title">Erro</h1>
-                    <p data-contexto="desc">subtitulo</p>
+                    <h1 class="title">Erro</h1>
+                    <p class="desc">subtitulo</p>
                 </div>
 
                 <div class="infoPrice">
-                    <span data-contexto="price">R$000,00</span>
+                    <span class="price">R$000,00</span>
                     <span>Vendido e entregue pela Riachuelo</span>
                 </div>
 
@@ -130,6 +130,10 @@
                             <label for="tamP">P</label>
                         </div>
                         <div class="tam">
+                            <input type="radio" name="sizes" class="radioTam" id="tamPP">
+                            <label for="tamPP">PP</label>
+                        </div>
+                        <div class="tam">
                             <input type="radio" name="sizes" class="radioTam" id="tamM">
                             <label for="tamM">M</label>
                         </div>
@@ -144,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-secondary">Adicionar à sacola</button>
         </div>
      </div>
 </body>
