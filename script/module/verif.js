@@ -14,7 +14,6 @@ export default function verifMail(){
         // Validar email
         const isValid = validareEmail(email)
         console.log(isValid)
-        
         if(isValid){
               toast()
         }else{

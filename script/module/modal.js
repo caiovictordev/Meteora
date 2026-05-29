@@ -2,10 +2,19 @@ export default function modal (){
     const closeModal = document.querySelector('.closeModal')
     const modal = document.querySelector('.modal')
     const botoes = document.querySelectorAll('.viewMore')
+    const sacola = document.querySelector('#sacola')
     let imgModal = document.querySelector('.image')
     let titleModal = document.querySelector('.title')
     let desc = document.querySelector('.desc')
     let price = document.querySelector('.price')
+
+    sacola.addEventListener('click', ()=>{
+        Swal.fire({
+            title: "Item adicionado a sacola",
+            icon: "success",
+            draggable: true
+        });
+    })
 
     botoes.forEach(item=> {
         item.addEventListener('click',()=>{
@@ -16,7 +25,7 @@ export default function modal (){
                 case 'camiseta':
                 modal.style.display = 'flex'
                 imgModal.src = '/src/images/Tablet/Imagens Cards/Camiseta.png'
-                imgModal.style.width = '100%'
+                imgModal.style.width = '80%'
                 titleModal.innerHTML = 'Camiseta Conforto'
                 desc.innerHTML = 'Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.'
                 price.innerHTML = 'R$70,00'
@@ -61,7 +70,7 @@ export default function modal (){
                 case 'bolsa':
                 modal.style.display = 'flex'
                 imgModal.src = '/src/images/Tablet/Imagens Cards/bolsa.png'
-                imgModal.style.width = '100%'
+                imgModal.style.width = '80%'
                 titleModal.innerHTML = 'Bolsa coringa'
                 desc.innerHTML = 'Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!'
                 price.innerHTML = 'R$120,00'
