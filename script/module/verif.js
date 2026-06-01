@@ -16,6 +16,8 @@ export default function verifMail(){
         console.log(isValid)
         if(isValid){
               toast()
+              resultMessage.textContent = "E-mail válido!"
+              resultMessage.style.color = "green"
         }else{
               resultMessage.textContent = "E-mail inválido!"
               resultMessage.style.color = "red"
